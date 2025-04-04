@@ -11,10 +11,12 @@ CAMERA_WIDTH = int(os.getenv('CAMERA_WIDTH', '1280'))
 CAMERA_HEIGHT = int(os.getenv('CAMERA_HEIGHT', '720'))
 
 # Configurações do modelo
-
 MODEL_PATH = os.getenv('MODEL_PATH', 'YOLO11n-pose.pt')
 TFLITE_PATH = os.getenv('TFLITE_PATH', 'model_tflite.tflite')
 CONFIDENCE_THRESHOLD = float(os.getenv('CONFIDENCE_THRESHOLD', '0.5'))
+
+# Motor de análise (YOLO ou MediaPipe)
+ENGINE = os.getenv('ENGINE', 'yolo').lower()
 
 # Configurações de dados
 SAVE_DATA = os.getenv('SAVE_DATA', 'true').lower() == 'true'
