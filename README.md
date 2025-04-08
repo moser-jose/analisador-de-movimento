@@ -22,10 +22,16 @@ Este projeto implementa um analisador de movimento em tempo real usando o modelo
 
 ## Instalação
 
-1. Clone o repositório:
+1.1. Clone o repositório via https:
 
 ```bash
-git clone https://github.com/seu-usuario/analisador-movimento.git
+git clone https://github.com/moser-jose/analisador-de-movimento.git
+cd analisador-movimento
+```
+
+1.2. Clone o repositório via ssh:
+```bash
+git clone git@github.com:moser-jose/analisador-de-movimento.git
 cd analisador-movimento
 ```
 

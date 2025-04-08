@@ -1,8 +1,6 @@
-ultralytics>=8.3.100
-opencv-python>=4.8.0
-numpy>=1.22.0,<1.24.0
-python-dotenv>=1.0.0
-matplotlib>=3.7.0
-tensorflow>=2.13.0
-mediapipe==0.10.13
-ml-dtypes==0.2.0 
+ultralytics
+opencv-python
+python-dotenv
+tensorflow
+ml-dtypes
+mediapipe
