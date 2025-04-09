@@ -8,15 +8,11 @@ def install_dependencies():
     
     # Lista de dependências com versões fixas para garantir compatibilidade
     dependencies = [
-        "ultralytics>=8.3.100",
-        "opencv-python>=4.8.0",
-        "numpy>=1.22.0,<1.24.0",
-        "python-dotenv>=1.0.0",
-        "matplotlib>=3.7.0",
-        "ml-dtypes==0.2.0",
-        "tensorflow==2.13.0",
-        "tflite-runtime>=2.13.0"
-        "mediapipe==0.10.13"
+        "python-dotenv",
+        "ml-dtypes",
+        "tensorflow",
+        "ultralytics",
+        "mediapipe"
     ]
     
     # Instalar cada dependência
@@ -43,8 +39,8 @@ def test_imports():
         print(f"✗ Erro ao importar OpenCV: {e}")
     
     try:
-        import ml_dtypes
-        print(f"✓ ML-DTtypes importado com sucesso (versão {ml_dtypes.__version__})")
+        from ml_dtypes import float8_e4m3fn, float8_e5m2
+        print(f"✓ ML-DTtypes importado com sucesso")
     except ImportError as e:
         print(f"✗ Erro ao importar ML-DTtypes: {e}")
     except AttributeError:
